@@ -46,7 +46,9 @@ export const Sidebar = ({
   if (!isLoadedOrg || !isLoadedOrgList || userMemberships.isLoading) {
     return (
       <>
-        <Skeleton />
+        <div className="flex items-center justify-between">
+          <Skeleton />
+        </div>
       </>
     )
   }
